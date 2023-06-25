@@ -1018,8 +1018,7 @@ void ip6_route_input(struct sk_buff *skb)
 		.flowi6_iif = skb->dev->ifindex,
 		.daddr = iph->daddr,
 		.saddr = iph->saddr,
-		.flowlabel = ip6_flowinfo(iph),
-		.flowi6_mark = skb->mark,
+o		.flowi6_mark = skb->mark,
 		.flowi6_proto = iph->nexthdr,
 	};
 
